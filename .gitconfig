@@ -1,0 +1,14 @@
+ [user]
+ 	name = Elwynn
+ 	email = elwynn.neglokpe@gmail.com
+ 
+ [credidential]
+ 	helper = cache --timeout = 360000
+ 	
+ [alias]
+ 	ch = checkout
+ 	st = status
+ 	co = commit
+ 
+ [color]
+ 	ui = auto

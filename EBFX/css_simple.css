@@ -1,0 +1,60 @@
+html{
+
+    background-attachment:fixed;
+	background-repeat:repeat;
+    background-size:contain;
+	font-family: calibri, arial, verdana, sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color: black;
+}
+
+#principale {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+/**************************** Formulaire ***************************/
+.fieldset{
+	border: 1px #7ad443 solid;	
+}
+
+/*************************** Alert *******************************/
+
+.alert-r {
+    padding: 20px;
+    background-color: #ec7148; /* Rouge */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert-v {
+    padding: 20px;
+    background-color: #7ad443; /* Vert */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+footer div{
+	margin: auto;
+	text-align: center;
+}

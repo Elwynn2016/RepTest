@@ -1,0 +1,344 @@
+html{
+
+    background-attachment:fixed;
+	background-repeat:repeat;
+    background-size:contain;
+	font-family: calibri, arial, verdana, sans-serif;
+	display : flex;
+	flex-direction: column;
+
+
+}
+/*...........................................LOGO............................................................*/
+a{
+	text-decoration:none;
+	color: black;
+}
+
+.logo{
+
+	width:300px;
+	padding-top:-20px;
+	float:left;
+	padding-right: 60px;
+
+}
+
+/*.........................................bloc du haut..................................................*/
+header{
+
+	margin-top:-20px;
+	padding:40px;
+	padding-top:-10px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+
+}
+
+
+/*................................Bare de recherche..........................................................*/
+
+
+
+	#zone_recherche {
+		width: 260px;
+		position: relative;
+		float:right;
+		margin-top:12px;
+
+	}
+
+
+
+#texte_recherche {
+	width: 198px;
+	margin:2px;
+	height:16px;
+	padding: 10px 50px 10px 10px;
+	background-color: rgba(77,77,77,0.6);
+	border: solid 1px #4D4D4D;
+	font-size: 18px;
+	color: #7a5440;
+}
+
+#texte_recherche:focus {
+	background-color: rgbd(77,77,77,0.5);
+	outline: 0 none; /* Pour enlever la "bordure" jaune qu'ajoute Google Chrome au focus */
+	color: #fff;
+
+}
+
+#bouton_recherche {
+	margin-top: -16px;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	height:30px
+}
+
+
+/*....................................................titre : reseau Sociaux..................................................*/
+#reseaux{
+	margin-top: 20px; 
+	display : flex;
+}
+
+.reseau{
+	width:30px;
+	height:30px;
+	margin: 2px;
+	margin-bottom:0px;
+}
+
+
+/*.............................................................Menu.............................................................*/
+
+
+@media screen and (max-width : 1150px){
+	/*Make dropdown links appear inline*/
+	#menu {
+		position: static;
+		display: none;
+	
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+}
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	display: flex;
+	background: #3996DB;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:flex;
+	margin-right:-10px;
+}
+
+
+/*Style for menu links*/
+li a {
+	display:flex;
+	justify-content:center;
+	 min-width:159px; 
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #3996DB;
+		
+}
+
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #4D4D4D;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #2f3036;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+		background: #2f3036;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		background: #3996DB;
+
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+#remplissage{
+	flex:1
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 1150px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/***************************************MAIN******************************************************************************/
+
+
+main{
+	padding : 20px;
+	margin-top : 20px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+}
+
+h1{
+	color:#7ad443;
+	font-size:50px;
+}
+
+h2{
+	color:#4D4D4D;
+}
+
+#visios{
+	display:flex;
+	flex-direction:row;
+}
+
+.unevid{
+	margin:10px;
+	width:160px;
+	height:200px;
+	text-overflow: ellipsis;
+}
+
+/*********************************FIN MAIN****************************************************************/
+
+
+
+
+
+
+
+
+
+
+ /*............................................bas de page..............................................*/
+
+ footer{
+	 -moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+ }
+ .partenaire{
+
+
+	font-size:15px;
+	text-align:center;
+	background: none repeat scroll 0% 0% ;
+	background-color:#469a38;
+	/* padding-bottom:5px; */
+	/* padding-right:20px; */
+	/* padding-left:20px; */
+}
+
+
+
+.partenaireLogo{
+	width:100px;
+	height:100x;
+	margin:10px;
+
+
+}
+
+
+
+hr{
+	margin-top:30px;
+
+}
+
+#bas-de-page{
+
+	font-size:15px;
+	text-align:center;
+	background: none repeat scroll 0% 0% ;
+	background-color:rgba(77,77,77, 10);
+	padding-bottom:5px;
+	padding:30px;
+
+	color:#FFF;
+
+}
+
+#bas-de-page span{
+        /* margin-right:  10px; */
+        padding-right: 10px;
+        border-right: 1px solid #888;
+}
+
